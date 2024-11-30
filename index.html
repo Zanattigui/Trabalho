@@ -12,17 +12,83 @@
         <h1>Olá, seja bem vindo ao meu site!</h1>
         <nav>
             <ul id="links">
-                <li><a href="sobremim.html">Sobre mim</a></li>
-                <li><a href="#">Formação</a></li>
-                <li><a href="#">Portifólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobreMim">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <!--Conteudo do site-->
     <main>
-        <h2>Site desenvolvido para o trabalho de Fundamentos da Programação Web</h2>
+        <section id="sobreMim">
+            <h2>Sessão "Sobre mim"</h2>
+            <p>Meu nome é Guilherme, nasci no estado do Mato Grosso do Sul em uma cidade bem pequena e, há três anos, me mudei para Americana, São Paulo, onde resido atualmente.</p>
+            <div class="imagens">
+                <div id="ms">
+                    <!--Imagem do estado MS-->
+                </div>
+                <div id="seta">
+                    <!--Imagem Seta-->
+                </div>
+                <div id="sp">
+                    <!--Imagem do estado SP-->
+                </div>
+            </div>
+            <p>Sou uma pessoa apaixonada por esportes, aproveitando meu tempo livre para jogar futebol, correr e praticar atividades físicas que me ajudam a manter a mente e o corpo em equilíbrio. Além disso, sou curioso e dedicado aos estudos, sempre buscando aprender algo novo para me desenvolver tanto pessoal quanto profissionalmente.</p>
+            <div class="imagens">
+                <div id="esporte">
+                    <!--Imagem futebol-->
+                </div>
+                <div id="estudando">
+                    <!--Imagem estudando-->
+                </div>
+            </div>
+            <p>
+                Atualmente, trabalho no almoxerife em uma distribuidora de peças voltada para sistemas de injeção a diesel. Minha rotina envolve gerenciar estoques, processos logísticos e implementar melhorias que otimizem o funcionamento do setor. Tenho um perfil proativo e gosto de me envolver em projetos que tragam inovação e eficiência para o ambiente de trabalho.
+            </p>
+            <p>
+                Estou sempre disposto a enfrentar desafios e acredito que o aprendizado constante é fundamental para o crescimento. Essa mentalidade tem me ajudado a lidar com diferentes situações, tanto no trabalho quanto na vida pessoal.
+            </p>
+        </section>
+        <section id="formacao">
+            <h2>Sessão Formação</h2>
+            <p>
+                Minha jornada acadêmica e profissional começou com a <strong>conclusão do Ensino Médio em 2021</strong>. Desde então, tenho buscado constantemente expandir meus conhecimentos e habilidades.
+                Concluí um curso de <strong>Automação Hidráulica pelo SENAI</strong>, onde adquiri conhecimentos técnicos essenciais para a área. Além disso, fiz um <strong>curso de Reparação de Peças a Diesel em Curitiba</strong>, aprimorando minha compreensão sobre o setor e suas necessidades.
+                Atualmente, estou <strong>cursando Análise e Desenvolvimento de Sistemas (ADS) na Uninter</strong>, com foco em programação, desenvolvimento de software e soluções tecnológicas.
+                Além dos cursos formais, também invisto no meu crescimento pessoal, realizando <strong>cursos por fora nas áreas de Python, CSS e HTML</strong>, sempre em busca de novas competências que me ajudem a expandir minha atuação profissional.
+            </p>
+        </section>
+        <section id="portifolio">
+            <h2>Sessão Portifólio</h2>
+            <p>Embora eu esteja em início de carreira na área de desenvolvimento web, já tive a oportunidade de trabalhar em alguns projetos práticos que me ajudaram a aprimorar minhas habilidades. Abaixo, destaco dois desses projetos que refletem minha dedicação e aprendizado contínuo:</p>
+            <p>Estou criando um site funcional para a empresa que eu atuo, para treinar meus conhecimentos, ainda nao esta finalizado, mas o aprendizado que adquiro montando esse projeto é ótimo: <br> <a href="https://zanattigui.github.io/neotech/">https://zanattigui.github.io/neotech/</a></p>
+            <p>Tambem estou fazendo um projeto em Python que simula registros de garantias do meu trabalho, como sou eu quem cuido da parte de garantia, resolvi desenvolver um projeto simples de registros de garantias: <br> <a href="https://github.com/Zanattigui/Projeto-Garantia/tree/main">https://github.com/Zanattigui/Projeto-Garantia/tree/main</a></p>
+            <p>Meu GitHub: <a href="https://github.com/Zanattigui">https://github.com/Zanattigui</a></p>
+        </section>
+        <section id="contato">
+            <form action="enviar.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                <br>
+            
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                <br>
+            
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+                <br>
+            
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
+                <br>
+            
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 </body>
 </html>

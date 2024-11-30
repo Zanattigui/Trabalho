@@ -5,15 +5,21 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: azure;
+    background-color: #F7F9FC;
 }
 
 header {
-    border: 1px solid black;
     text-align: center;
     align-content: center;
     height: 300px;
+    width: 60%;
+    margin: auto;
+    background-color: #ECEFF4;
 }
 
 header > h1 {
@@ -36,7 +42,7 @@ header > nav > ul > li {
     margin: 7px;
 }
 
-header > nav > ul > li > a {
+a {
     text-decoration: none;
     color: rgb(32, 131, 98);
     font-weight: bolder;
@@ -48,10 +54,95 @@ header > nav > ul > li:hover {
     transition: 0.7s;
 }
 
-main {
-    border: 1px solid black;
+p {
+    margin: 25px 150px 25px 150px;
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.4em;
 }
 
-main > h2 {
+main {
+    width: 60%;
+    background-color: #ECEFF4;
+    margin: auto;
+}
+
+h2 {
     text-align: center;
+}
+
+.imagens {
+    text-align: center;
+}
+
+.imagens > div {
+    display: inline-block;
+    background-size: cover;
+    margin: 10px;
+}
+
+#ms{
+    width: 300px;
+    height: 255px;
+    background-image: url(imgs/ms.png);
+}
+
+#seta{
+    width: 300px;
+    height: 255px;
+    background-image: url(imgs/seta.png);
+}
+
+#sp{
+    width: 300px;
+    height: 255px;
+    background-image: url(imgs/sp.png);
+}
+
+#esporte {
+    width: 300px;
+    height: 255px;
+    background-image: url(imgs/futebol.jpg);
+}
+
+#estudando {
+    width: 300px;
+    height: 255px;
+    background-image: url(imgs/estudando.jpg);
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F7F9FC;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #457B9D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A8DADC;
 }
